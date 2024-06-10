@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*font-family: "Satisfy", cursive;*/
+
+body{
+    font-family: "Acme", sans-serif;
+    background: url(imagenes/background.jpg) no-repeat;
+    background-size: cover;
+    
+}
+
+header{
+    background-color: #faeffa;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav{
+    position: absolute;
+    top: 60px;
+    right: 30px;
+}
+
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+    padding: 15px;
+}
+
+nav a{
+    text-transform: uppercase;
+    font-size: 2.5em;
+    text-decoration: none;
+    color:rgb(39, 7, 7);
+    text-shadow: 3px 3px 4px rgb(181, 83, 226);
+}
+
+nav:hover{
+    color:rgb(68, 10, 80);
+    text-decoration: underline 2px;
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+h2{
+    text-align: center ;
+    font-size: 2.2em;
+    text-decoration: underline;
+    color:rgb(39, 7, 7);
+    margin: 1em;
+    letter-spacing: 2px;
+    padding: 1em;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 4px rgb(181, 83, 226);
+}
+
+h2:before{
+    content: "✧";
+    padding: 5px;
+}
+
+h2:after{
+    content: "✧";
+    padding: 5px;
+ }
+
+.inicio{
+    background: url(imagenes/madera8.jpg);
+    border-radius: 10px;
+    box-shadow: 7px 9px 9px rgb(78, 8, 87);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2em;
+    width: 940px;
+    margin: 0 auto;  
+}
+
+
+.inicio p{
+ text-align: justify;
+ text-indent: 40px;
+ margin: 1em;
+ padding:1em;
+ font-family: 'Lucida Sans', 'sans-serif';
+ font-size: 1.6em;
+ color:rgb(4, 0, 5);
+ text-shadow: 3px 5px 5px rgb(178, 113, 221);
+}
+
+.inicio p::first-letter{
+    font-size: xx-large;
+}
+
+#foto{
+    float: left;
+    margin: 2em;
+    border-radius: 100px 0 100px 0;
+    box-shadow: 7px 7px 9px black;
+}
+
+.lista-experiencia{
+ background: url(imagenes/madera6.jpg);
+ background-size: cover;
+ width: 940px;
+ margin: 2em auto;
+ padding: 3em 0;
+ border-radius: 10px;
+ box-shadow: 7px 9px 9px rgb(78, 8, 87);
+}
+
+h3{
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    color:rgb(39, 7, 7);
+    text-shadow: 3px 5px 5px rgb(178, 113, 221);
+    font-size: 1.7em;
+    margin-top: 3em;
+}
+
+.lista-experiencia li{
+    list-style: none;
+}
+
+.subtitulo{
+    font-style: italic;
+    font-weight: bold;
+    color: rgb(32, 13, 13);
+}
+
+.lista-experiencia p{
+    margin: 1em;
+    padding: 0.5em;
+    font-size: 1.5em;
+    text-align: justify;
+    text-indent: 40px;
+    text-shadow: 3px 4px 4px rgb(178, 113, 221);
+}
+
+.redes-sociales{
+    background-color: #faeffa;
+    padding: 40px;
+    text-align: center;
+    font-size: 2em;
+}
+
+#enlace{
+    text-decoration: none;
+    color: rgb(39, 7, 7);
+    padding: 1em;
+    margin: 5px;
+}
+
+#enlace:hover{
+    color:rgb(68, 10, 80);
+    text-decoration: underline 2px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.ir-arriba{
+    display: block;
+    font-size: 2em;
+    color:rgb(68, 10, 80);
+    text-align: center;
+ 
+}
+
+@media screen and (max-width:480px){
+    h1{text-align: center;}
+    nav{
+        position: static;
+    }
+.caja, .inicio, .lista-experiencia{width: auto;}
+#enlace{
+    position: static;
+}
+.redes-sociales{width: 100%;}
+}
+   
