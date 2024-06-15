@@ -5,6 +5,10 @@
 
 /*font-family: "Satisfy", cursive;*/
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     font-family: "Acme", sans-serif;
     background: url(imagenes/background.jpg) no-repeat;
